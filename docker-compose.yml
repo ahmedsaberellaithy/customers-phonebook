@@ -1,0 +1,17 @@
+version: "3"
+services:
+  backend:
+    image: "customers/backend"
+    container_name: "backend"
+    build: ./customer-api
+    ports:
+      - "8082:8082"
+
+  frontend:
+    image: "customers/frontend"
+    container_name: "frontend"
+    build: ./customers-list
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
