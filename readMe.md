@@ -7,6 +7,9 @@
     - Approach 2.1: Open ./customer-api using springboot supporting IDE "preferred eclipse" and run project or test cases
     - Approach 2.2: After running the backend, follow the readme in ./customers-list to run React app
 
+### Entry Points
+	- React: http://Localhost:3000
+	- Springboot: http://Localhost:8082
 ### Content
     ├── customer-api                # Springboot app to provide the filtered data
     |       ├── sample.db           # sqlite db file containing sample data
